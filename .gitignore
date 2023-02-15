@@ -1,0 +1,34 @@
+# Xcode
+.DS_Store
+*/build/*
+
+xcuserdata
+profile
+DerivedData
+.idea/
+*.hmap
+*.xccheckout
+*.xcworkspace
+!default.xcworkspace
+
+# Xcode Project
+**/*.xcodeproj/xcuserdata/
+**/*.xcworkspace/xcuserdata/
+**/*.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+**/*.xcworkspace/xcshareddata/*.xccheckout
+**/*.xcworkspace/xcshareddata/*.xcscmblueprint
+**/*.playground/**/timeline.xctimeline
+.idea/
+
+#CocoaPods
+Pods
+!Podfile
+!Podfile.lock
+# Other
+*~
+.DS_Store
+*.swp
+*.save
+._*
+*.bak
+

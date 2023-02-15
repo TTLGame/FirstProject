@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Pages" representedClassName="Pages" syncable="YES">
+        <attribute name="page" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="perPage" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" elementID="per_page"/>
+        <attribute name="supText" optional="YES" attributeType="String" elementID="sup_text"/>
+        <attribute name="supUrl" optional="YES" attributeType="String" elementID="sup_url"/>
+        <attribute name="total" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalPages" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" elementID="total_pages"/>
+        <relationship name="has" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="isIn" inverseEntity="Person"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String" elementID="first_name"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" elementID="last_name"/>
+        <relationship name="isIn" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pages" inverseName="has" inverseEntity="Pages"/>
+    </entity>
+    <elements>
+        <element name="Pages" positionX="-63" positionY="-18" width="128" height="134"/>
+        <element name="Person" positionX="330.570556640625" positionY="-91.8017578125" width="128" height="119"/>
+    </elements>
+</model>
